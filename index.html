@@ -1,8 +1,13 @@
 <html>
 <head>
-	<!--The key to this page working.-->
+	<!--
+	The key to this page working.
+	Also inserted into the iframe when it is created.
+	-->
 	<meta name="apple-mobile-web-app-capable" content="yes"> <!--Safari-->
 	<meta name="mobile-web-app-capable" content="yes"> <!--Chrome-->
+	
+	<link rel=stylesheet href="style.css">
 	
 	<script type="text/javascript">
 	function findGetParameter(parameterName) {
@@ -31,6 +36,7 @@
 		document.write(
 			'<html> <head><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"></head> <body><iframe frameborder="0" src="'+where+'" scrolling="auto" noresize="" height="100%" width="100%" style="position: absolute; top: 0; right: 0; bottom: 0: left: 0;"></iframe></body> </html>'		
 		);
+		return;
 	}
 	
 	function go() {
@@ -46,8 +52,10 @@
 </head>
 
 <body>
+	<center>
 	<input type="text" id="mainInput" placeholder="example.com"></input>
-	<br>
+	<br><br>
 	<button id="goButton" onclick="go();">Go!</input>
+	</center>
 </body>
 </html>

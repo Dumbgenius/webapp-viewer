@@ -1,0 +1,26 @@
+button {
+	width:40%;
+	font-size: 16px; 
+    font-size: 4vw;
+	border-radius: 10px;
+	border: 2px solid #222222;
+	background-color:#DDDDDD;
+}
+
+button:hover {
+	background-color:#BBBBBB;
+}
+
+button:active {
+	background-color:#888888;
+}
+
+input {
+	width:80%;
+	font-size: 16px; 
+    font-size: 4vw;
+	text-align:center;
+	box-sizing: border-box;
+	border-radius: 10px;
+	border: 8px solid #444444;
+}
