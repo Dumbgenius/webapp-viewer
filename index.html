@@ -7,6 +7,8 @@
 	<meta name="apple-mobile-web-app-capable" content="yes"> <!--Safari-->
 	<meta name="mobile-web-app-capable" content="yes"> <!--Chrome-->
 	
+	<meta name="viewport" content="width=device-width initial-scale=1.0, user-scalable=no">
+	
 	<link rel=stylesheet href="style.css">
 	
 	<script type="text/javascript">
@@ -34,7 +36,7 @@
 		get("mainInput").value = findGetParameter("url");
 		where = addhttp(get("mainInput").value)
 		document.write(
-			'<html> <head><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"></head> <body><iframe frameborder="0" src="'+where+'" scrolling="auto" noresize="" height="100%" width="100%" style="position: absolute; top: 0; right: 0; bottom: 0: left: 0;"></iframe></body> </html>'		
+			'<html> <head><meta name="viewport" content="width=device-width initial-scale=1.0, user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"></head> <body><iframe frameborder="0" src="'+where+'" scrolling="no" noresize="" height="100%" width="100%" style="position: absolute; top: 0; right: 0; bottom: 0: left: 0;"></iframe></body> </html>'		
 		);
 		return;
 	}
